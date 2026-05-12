@@ -38,7 +38,7 @@ async function renderMovies(filter) {
     inputVal = localStorage.getItem("sharedData");
   }
   
-  const results = await fetch (`http://www.omdbapi.com/?s=${inputVal}&type=movie&apikey=e0a5be46`);
+  const results = await fetch (`https://www.omdbapi.com/?s=${inputVal}&type=movie&apikey=e0a5be46`);
   const resultsData = await results.json(); 
 
   if (!resultsData.Search) {
@@ -68,7 +68,7 @@ async function renderMovies(filter) {
         <div class="movie">
         <figure class="movie__img--wrapper">
           <img 
-          src="http://img.omdbapi.com/?i=${movie.imdbID}&h=300&apikey=e0a5be46"
+          src="https://img.omdbapi.com/?i=${movie.imdbID}&h=300&apikey=e0a5be46"
           onerror="this.onerror=null; this.src='assets/No Image.png';"
         >
         </figure>
