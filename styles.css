@@ -115,6 +115,7 @@ nav {
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.35px;  
+  color: #243e63;
 }
 
 .nav__link--contact {
@@ -244,6 +245,7 @@ h2 {
   text-transform: uppercase;
   margin-bottom: 80px;
   text-align: center;
+  color: #243e63;
 }
 
 .input-wrapper {
